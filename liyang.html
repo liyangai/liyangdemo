@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="liyang">
+    <title>李阳的主页</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!-- 顶部区域 -->
+<header id='header'>
+    <!-- 通栏菜单 -->
+    <div class="topbar hidden-sm hidden-xs ">
+        <div class="container">
+            <div class="row">
+                <div class="tb-1  col-md-2">
+                    <a href="#" class="text-muted">
+                        <span>微信二维码</span>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <img src="img/erweima.png" width='120' title='扫一扫' alt="扫一扫">
+                    </a>
+                </div>
+                <div class="tb-2 col-md-4 text-center text-muted">
+                    <i class="icon-home3"></i>&nbsp;<span>安徽省六安市舒城县</span>
+                </div>
+                <div class="tb-3 col-md-3 text-center">
+                    <i class="icon-phone"></i><span>13696503779</span>
+                </div>
+                <div class="tb-4 col-md-3 text-center">
+                    <i class="icon-tux"></i><span>1297742315</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /通栏菜单 -->
+
+    <!-- 导航菜单 -->
+    <nav class="navbar navbar-default " data-spy="affix" data-offset-top="100" data-offset-bottom="100">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_menu"
+                        aria-expanded="false">
+                    <span class="sr-only">切换菜单显示</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    技能栏
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="nav_menu">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">bootstrap <br>（本主页） <span class="sr-only">(current)</span></a></li>
+                    <li><a href="demo/demolist/angularjsdemolist.html" target='_blank'>angularjs<br>（点击跳转）</a></li>
+                    <li><a href="demo/demolist/ajaxdemolist.html" target='_blank'>ajax<br>（点击跳转）</a></li>
+                    <li><a href="demo/demolist/jQuerydemolist.html" target='_blank'>jQuery <br>（点击跳转）</a></li>
+                    <li><a href="demo/css3demo/demo.html" target='_blank'>Css3 <br>（点击跳转）</a></li>
+                    <li><a href="demo/demolist/jsdemolist.html" target='_blank'>原生js <br>（点击跳转）</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm ">
+                    <li><a href="img/my.png" target='_blank'>个人照片</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /导航菜单 -->
+</header>
+<!-- /顶部区域 -->
+
+
+<!-- 通栏轮播 -->
+<section id="home_slide" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#home_slide" data-slide-to="0" class="active"></li>
+        <li data-target="#home_slide" data-slide-to="1"></li>
+        <li data-target="#home_slide" data-slide-to="2"></li>
+        <li data-target="#home_slide" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="item-image" data-image-large="img/slide_01_2000x410.jpg"
+                 data-image-small="img/slide_01_640x340.jpg" data-image-alt="哈哈"></div>
+        </div>
+        <div class="item">
+            <div class="item-image" data-image-large="img/slide_02_2000x410.jpg"
+                 data-image-small="img/slide_02_640x340.jpg" data-image-alt="哈哈"></div>
+        </div>
+        <div class="item">
+            <div class="item-image" data-image-large="img/slide_03_2000x410.jpg"
+                 data-image-small="img/slide_03_640x340.jpg" data-image-alt="哈哈"></div>
+        </div>
+        <div class="item">
+            <div class="item-image" data-image-large="img/slide_04_2000x410.jpg"
+                 data-image-small="img/slide_04_640x340.jpg" data-image-alt="哈哈"></div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#home_slide" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">上一张</span>
+    </a>
+    <a class="right carousel-control" href="#home_slide" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">下一张</span>
+    </a>
+</section>
+<!-- /通栏轮播 -->
+
+
+<!-- 介绍 -->
+<section id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-2">
+                <div class="news-title">
+                    个人介绍
+                </div>
+            </div>
+            <div class="col-md-1">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-stacked news-nav" role="tablist">
+                    <li role="presentation" class="active"><a href="#news_1" aria-controls="news_1" role="tab"
+                                                              data-toggle="tab" data-title="大学经历"><i
+                            class="icon-news01"></i></a></li>
+                    <li role="presentation"><a href="#news_2" aria-controls="news_2" role="tab" data-toggle="tab"
+                                               data-title="综合能力"><i class="icon-news02"></i></a></li>
+                    <li role="presentation"><a href="#news_3" aria-controls="news_3" role="tab" data-toggle="tab"
+                                               data-title="工作经历"><i class="icon-news03"></i></a></li>
+                    <li role="presentation"><a href="#news_4" aria-controls="news_4" role="tab" data-toggle="tab"
+                                               data-title="自我评价"><i class="icon-news04"></i></a></li>
+                </ul>
+                <i class="line hidden-sm hidden-xs"></i>
+            </div>
+            <div class="col-md-7">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="news_1">
+                        <ul>
+                            <li>学校：合肥工业大学</li>
+                            <li>专业：工业工程</li>
+                            <li>毕业时间：2016年6月</li>
+                            <li>语言能力：英语 CET-6</li>
+                            <li>计算机能力：国家计算机二级C语言</li>
+
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news_2">
+                        <ul>
+                            <li>1.熟悉HTML语言和CSS样式表，并能够熟练使用Div+css进行</li>
+                            <li>网页排版以及设计，擅长将网页原图模型转化成静态网页；</li>
+                            <li>2.熟练运用原生js，能够实现ajax,面向对象等；</li>
+                            <li>3.了解html5和css3新特性；</li>
+                            <li>4.掌握并能熟练使用jQuery、bootstrap和angularjs。</li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news_3">
+                        <ul>
+                            <li>1.在大四的下学期到广州鹏棠公司实习，主要负责html和css的静态页面编写。</li>
+                            <li>2.在毕业之后开始使用原生js给静态页面写特效并学习了bootstrap,jQuery,angularjs。</li>
+                            <li>3.使用jQuery代替原生js实现静态页面的特效，并可以配合bootstrap实现响应式布局。</li>
+                            <li>4.使用原生js或jQuery实现页面局部的异步请求。</li>
+                            <li>5.使用angularjs简化开发，实现数据绑定和单页面局部请求。</li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news_4">
+                        <ul>
+                            <li>1.在一年的前端开发学习中，我学习到了很多前端技术；</li>
+                            <li>2.也培养了我独立思考和自主学习的能力；</li>
+                            <li>3.我变得更有耐心，思维更活跃；</li>
+                            <li>4.在压力和困难面前我有很好的分析能力和解决问题的能力；</li>
+                            <li>5.我更是一位富有团队精神的人，能够相互协作和充分的沟通。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--介绍-->
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
